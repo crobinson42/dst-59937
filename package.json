@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {

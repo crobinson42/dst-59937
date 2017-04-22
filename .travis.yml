@@ -9,6 +9,7 @@ node_js:
 before_script:
   - npm install -D
   - npm prune
+  - npm run build
 after_success:
   - npm run semantic-release
 branches:
