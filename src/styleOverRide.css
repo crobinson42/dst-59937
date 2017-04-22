@@ -1,0 +1,4 @@
+/* this allows the tagify input not to stretch out the row width */
+.category, .priority, .status, .due, .release, .assignedTo, .clientTicket {
+    white-space: normal;
+}

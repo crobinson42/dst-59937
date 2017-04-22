@@ -1,0 +1,8 @@
+div.filterInput {
+    padding: 7px;
+    border: 1px solid #DDD;
+}
+
+div.filterInput input {
+    border: none;
+}
