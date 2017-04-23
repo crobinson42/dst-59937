@@ -1,0 +1,18 @@
+.controlsContainer {
+    padding: 5px;
+    border: 1px solid #DDD;
+    margin: 5px;
+}
+
+button.delete {
+    color: red;
+    background-color: white;
+    border: none;
+    border: solid 1px grey;
+    padding: 3px;
+    border-radius: 20px;
+    line-height: 12px;
+    vertical-align: middle;
+    text-align: center;
+    width: 20px;
+}

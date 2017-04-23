@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    /*display: none; !* Hidden by default *!*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
@@ -20,14 +20,26 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    position: relative;
 }
 
 /* The Close Button */
 .close {
     color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    text-align: right;
+    font-size: 24px;
     font-weight: bold;
+    top: -10px;
+    right: -10px;
+    border-radius: 24px;
+    background: grey;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 24px;
 }
 
 .close:hover,

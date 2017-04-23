@@ -16,9 +16,7 @@ export default class FilterInput {
 	}
 
 	filter = () => {
-		const values = this.$el.val()
-
-		const matches = (val1, val2) => val1
+		const values = this.$el.val().toLowerCase()
 
 		this.params.$filterElements.each((i, el) => {
 			const $el = $(el)
@@ -27,7 +25,7 @@ export default class FilterInput {
 			if (!values || !values.length) {
 				$el.removeClass('tagify-hide')
 			}
-			else if ($el.text().trim().indexOf(values) > 0) {
+			else if ($el.text().trim().toLowerCase().indexOf(values) >= 0) {
 				$el.removeClass('tagify-hide')
 			} else {
 				$el.addClass('tagify-hide')
