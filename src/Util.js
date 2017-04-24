@@ -30,7 +30,9 @@ const Util = {
 			ls = JSON.parse(ls)
 		} catch (e) {}
 
-		return key ? ls[key] : ls
+		let returnVal = key ? ls[key] : ls
+
+		return returnVal
 	}
 }
 

@@ -73,7 +73,10 @@ export default class TagInput {
 	}
 
 	setLocalStorage = (val = []) => {
-		const lsTags = Util.getLocalStorage('tags')
+		let lsTags = Util.getLocalStorage('tags')
+
+		lsTags = this._ensureTagsKeyLocalStorage(lsTags)
+
 		val = val.filter(s => s && s.length)
 		lsTags[this.createTagName()] = val
 		Util.setLocalStorage('tags', lsTags)
@@ -82,14 +85,21 @@ export default class TagInput {
 	getLocalStorage = () => {
 		let lsTags = Util.getLocalStorage('tags')
 
+		lsTags = this._ensureTagsKeyLocalStorage(lsTags)
+
+		return lsTags[this.createTagName()]
+	}
+
+	_ensureTagsKeyLocalStorage = (lsTags) => {
 		if (!lsTags) {
 			lsTags = {}
 		}
+		console.log(`here`,lsTags)
 		if (!lsTags[this.createTagName()]) {
 			lsTags[this.createTagName()] = []
 		}
 
-		return lsTags[this.createTagName()]
+		return lsTags
 	}
 
 	filter = () => {

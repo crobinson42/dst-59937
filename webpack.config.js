@@ -106,9 +106,8 @@ module.exports = {
 	// 	}
 	// },
 
+	// devtool: "eval",
 	devtool: "source-map", // enum
-	// enhance debugging by adding meta info for the browser devtools
-	// source-map most detailed at the expense of build speed.
 
 	context: __dirname, // string (absolute path!)
 	// the home directory for webpack
