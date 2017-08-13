@@ -1,7 +1,7 @@
 {
   "name": "dst-59937",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "dst",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
